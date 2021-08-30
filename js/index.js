@@ -65,3 +65,47 @@ nav.querySelector('a:nth-of-type(6)').textContent = siteContent['nav']['nav-item
 ctaText.textContent = siteContent['cta']['h1'];
 ctaimg.src = siteContent['cta']['img-src'];
 ctabutton.textContent = siteContent['cta']['button'];
+
+const topcontent = document.querySelector('.main-content .top-content');
+const bottomcontent = document.querySelector('.main-content .bottom-content');
+
+const featuresh4 = topcontent.querySelector('.text-content:nth-of-type(1) h4');
+const featurestext = topcontent.querySelector('.text-content:nth-of-type(1) p');
+const abouth4 = topcontent.querySelector('.text-content:nth-of-type(2) h4');
+const abouttext = topcontent.querySelector('.text-content:nth-of-type(2) p');
+const servicesh4 = bottomcontent.querySelector('.text-content:nth-of-type(1) h4');
+const servicestext = bottomcontent.querySelector('.text-content:nth-of-type(1) p');
+const producth4 = bottomcontent.querySelector('.text-content:nth-of-type(2) h4');
+const producttext = bottomcontent.querySelector('.text-content:nth-of-type(2) p');
+const visionh4 = bottomcontent.querySelector('.text-content:nth-of-type(3) h4');
+const visiontext = bottomcontent.querySelector('.text-content:nth-of-type(3) p');
+//main-content>top-content>text-content nth2
+//main-content>bottom-content>text-content nth3
+
+//topcontent.style.backgroundColor = 'red';
+//topcontent.querySelector('.text-content:nth-of-type(2)').textContent = 'butts';
+
+featuresh4.textContent = siteContent['main-content']['features-h4']
+featurestext.textContent = siteContent['main-content']['features-content']
+//topcontent.querySelector('.text-content:nth-of-type(1)').prepend(featuresh4);
+//topcontent.querySelector('.text-content:nth-of-type(1)').appendChild(featurestext);
+
+abouth4.textContent = siteContent['main-content']['about-h4']
+abouttext.textContent = siteContent['main-content']['about-content']
+//topcontent.querySelector('.text-content:nth-of-type(2)').prepend(abouth4);
+//topcontent.querySelector('.text-content:nth-of-type(2)').appendChild(abouttext);
+
+servicesh4.textContent = siteContent['main-content']['services-h4']
+servicestext.textContent = siteContent['main-content']['services-content']
+//bottomcontent.querySelector('.text-content:nth-of-type(1)').prepend(serviceh4);
+//bottomcontent.querySelector('.text-content:nth-of-type(1)').appendChild(servicetext);
+
+producth4.textContent = siteContent['main-content']['product-h4']
+producttext.textContent = siteContent['main-content']['product-content']
+//bottomcontent.querySelector('.text-content:nth-of-type(2)').prepend(producth4);
+//bottomcontent.querySelector('.text-content:nth-of-type(2)').appendChild(producttext);
+
+visionh4.textContent = siteContent['main-content']['vision-h4']
+visiontext.textContent = siteContent['main-content']['vision-content']
+//bottomcontent.querySelector('.text-content:nth-of-type(3)').prepend(visionh4);
+//bottomcontent.querySelector('.text-content:nth-of-type(3)').appendChild(visiontext);
