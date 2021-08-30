@@ -44,7 +44,9 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //ready to start
 const nav = document.querySelector('nav');
 const nava = document.querySelectorAll('nav a');
+const logoimg = document.querySelector('.logo-img');
 const cta = document.querySelector('.cta');
+const ctaText = cta.querySelector('.cta-text h1');
 const mainContent = document.querySelector('.main-content')
 const contact = document.querySelector('.contact');
 const footer = document.querySelector('footer');
@@ -57,3 +59,4 @@ nav.querySelector('a:nth-of-type(3)').textContent = 'vision';
 nav.querySelector('a:nth-of-type(4)').textContent = 'features';
 nav.querySelector('a:nth-of-type(5)').textContent = 'about';
 nav.querySelector('a:nth-of-type(6)').textContent = 'contact';
+ctaText.textContent = 'something';
