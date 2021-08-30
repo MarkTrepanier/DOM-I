@@ -42,3 +42,15 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //ready to start
+const nav = document.querySelector('nav');
+const cta = document.querySelector('.cta');
+const mainContent = document.querySelector('.main-content')
+const contact = document.querySelector('.contact');
+const footer = document.querySelector('footer');
+
+nav.querySelector('a:nth-of-type(1)').textContent = 'service';
+nav.querySelector('a:nth-of-type(2)').textContent = 'product';
+nav.querySelector('a:nth-of-type(3)').textContent = 'vision';
+nav.querySelector('a:nth-of-type(4)').textContent = 'features';
+nav.querySelector('a:nth-of-type(5)').textContent = 'about';
+nav.querySelector('a:nth-of-type(6)').textContent = 'contact';
