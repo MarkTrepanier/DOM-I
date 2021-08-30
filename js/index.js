@@ -43,11 +43,14 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //ready to start
 const nav = document.querySelector('nav');
+const nava = document.querySelectorAll('nav a');
 const cta = document.querySelector('.cta');
 const mainContent = document.querySelector('.main-content')
 const contact = document.querySelector('.contact');
 const footer = document.querySelector('footer');
 
+//const nava = nav.querySelectorAll('a');
+nava.forEach(a => a.style.color = '#4f4f4f');
 nav.querySelector('a:nth-of-type(1)').textContent = 'service';
 nav.querySelector('a:nth-of-type(2)').textContent = 'product';
 nav.querySelector('a:nth-of-type(3)').textContent = 'vision';
