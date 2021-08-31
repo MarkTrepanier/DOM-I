@@ -54,15 +54,26 @@ const contact = document.querySelector('.contact');
 const footer = document.querySelector('footer');
 
 
-nava.forEach(a => a.style.color = '#4f4f4f');
+nava.forEach(a => a.style.color = 'green');
 nav.querySelector('a:nth-of-type(1)').textContent = siteContent['nav']['nav-item-1'];
 nav.querySelector('a:nth-of-type(2)').textContent = siteContent['nav']['nav-item-2'];
 nav.querySelector('a:nth-of-type(3)').textContent = siteContent['nav']['nav-item-3'];
 nav.querySelector('a:nth-of-type(4)').textContent = siteContent['nav']['nav-item-4'];
 nav.querySelector('a:nth-of-type(5)').textContent = siteContent['nav']['nav-item-5'];
 nav.querySelector('a:nth-of-type(6)').textContent = siteContent['nav']['nav-item-6'];
+const newnava0 = document.createElement('a');
+const newnava1 = document.createElement('a');
+newnava0.textContent = 'Merch';
+newnava0.href = '#';
+newnava1.href = '#';
+newnava1.textContent = 'facebook';
+nav.appendChild(newnava0);
+nav.appendChild(newnava1);
+const newnavaset = document.querySelectorAll('nav a');
+newnavaset.forEach(a => a.style.color = 'green');//lol
 
 //cta
+ctaText.style.wordSpacing = '300px'
 ctaText.textContent = siteContent['cta']['h1'];
 ctaimg.src = siteContent['cta']['img-src'];
 ctabutton.textContent = siteContent['cta']['button'];
@@ -100,14 +111,14 @@ producttext.textContent = siteContent['main-content']['product-content']
 
 visionh4.textContent = siteContent['main-content']['vision-h4']
 visiontext.textContent = siteContent['main-content']['vision-content']
-//todo DOM is Awesome fix
+//todo DOM is Awesome. fix requires mediaquery
 //contact
-//h4
-//p
-//p
-//p
+
 contact.style.width = '20%'
 contact.querySelector('h4').textContent = siteContent['contact']['contact-h4'];
 contact.querySelector('p:nth-of-type(1)').textContent = siteContent['contact']['address'];
 contact.querySelector('p:nth-of-type(2)').textContent = siteContent['contact']['phone'];
 contact.querySelector('p:nth-of-type(3)').textContent = siteContent['contact']['email'];
+
+//footer
+footer.textContent = siteContent['footer']['copyright']
