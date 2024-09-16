@@ -40,3 +40,85 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//ready to start!!
+const nav = document.querySelector('nav');
+const nava = document.querySelectorAll('nav a');
+const logoimg = document.querySelector('.logo-img');
+const cta = document.querySelector('.cta');
+const ctaText = cta.querySelector('.cta-text h1');
+const ctabutton = cta.querySelector('.cta-text button');
+const ctaimg = cta.querySelector('#cta-img');
+const mainContent = document.querySelector('.main-content')
+const contact = document.querySelector('.contact');
+const footer = document.querySelector('footer');
+
+
+nava.forEach(a => a.style.color = 'green');
+nav.querySelector('a:nth-of-type(1)').textContent = siteContent['nav']['nav-item-1'];
+nav.querySelector('a:nth-of-type(2)').textContent = siteContent['nav']['nav-item-2'];
+nav.querySelector('a:nth-of-type(3)').textContent = siteContent['nav']['nav-item-3'];
+nav.querySelector('a:nth-of-type(4)').textContent = siteContent['nav']['nav-item-4'];
+nav.querySelector('a:nth-of-type(5)').textContent = siteContent['nav']['nav-item-5'];
+nav.querySelector('a:nth-of-type(6)').textContent = siteContent['nav']['nav-item-6'];
+const newnava0 = document.createElement('a');
+const newnava1 = document.createElement('a');
+newnava0.textContent = 'Merch';
+newnava0.href = '#';
+newnava1.href = '#';
+newnava1.textContent = 'facebook';
+nav.appendChild(newnava0);
+nav.appendChild(newnava1);
+const newnavaset = document.querySelectorAll('nav a');
+newnavaset.forEach(a => a.style.color = 'green');//lol
+
+//cta
+ctaText.style.wordSpacing = '300px'
+ctaText.textContent = siteContent['cta']['h1'];
+ctaimg.src = siteContent['cta']['img-src'];
+ctabutton.textContent = siteContent['cta']['button'];
+
+//main-content
+const topcontent = mainContent.querySelector('.top-content');
+const bottomcontent = mainContent.querySelector('.bottom-content');
+const mainimg = mainContent.querySelector('.middle-img');
+
+mainimg.src = siteContent['main-content']['middle-img-src'];
+
+const featuresh4 = topcontent.querySelector('.text-content:nth-of-type(1) h4');
+const featurestext = topcontent.querySelector('.text-content:nth-of-type(1) p');
+const abouth4 = topcontent.querySelector('.text-content:nth-of-type(2) h4');
+const abouttext = topcontent.querySelector('.text-content:nth-of-type(2) p');
+const servicesh4 = bottomcontent.querySelector('.text-content:nth-of-type(1) h4');
+const servicestext = bottomcontent.querySelector('.text-content:nth-of-type(1) p');
+const producth4 = bottomcontent.querySelector('.text-content:nth-of-type(2) h4');
+const producttext = bottomcontent.querySelector('.text-content:nth-of-type(2) p');
+const visionh4 = bottomcontent.querySelector('.text-content:nth-of-type(3) h4');
+const visiontext = bottomcontent.querySelector('.text-content:nth-of-type(3) p');
+
+
+featuresh4.textContent = siteContent['main-content']['features-h4']
+featurestext.textContent = siteContent['main-content']['features-content']
+
+abouth4.textContent = siteContent['main-content']['about-h4']
+abouttext.textContent = siteContent['main-content']['about-content']
+
+servicesh4.textContent = siteContent['main-content']['services-h4']
+servicestext.textContent = siteContent['main-content']['services-content']
+
+producth4.textContent = siteContent['main-content']['product-h4']
+producttext.textContent = siteContent['main-content']['product-content']
+
+visionh4.textContent = siteContent['main-content']['vision-h4']
+visiontext.textContent = siteContent['main-content']['vision-content']
+//todo DOM is Awesome. fix requires mediaquery
+//contact
+
+contact.style.width = '20%'
+contact.querySelector('h4').textContent = siteContent['contact']['contact-h4'];
+contact.querySelector('p:nth-of-type(1)').textContent = siteContent['contact']['address'];
+contact.querySelector('p:nth-of-type(2)').textContent = siteContent['contact']['phone'];
+contact.querySelector('p:nth-of-type(3)').textContent = siteContent['contact']['email'];
+
+//footer
+footer.textContent = siteContent['footer']['copyright']
